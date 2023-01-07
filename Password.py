@@ -18,5 +18,5 @@ for x in password:
   print(f"Your password could be: " + ''.join(password))
   break
 
-Strong_password = ''.join(sorted(password))
+Strong_password = ''.join(random.sample(password, len(password)))
 print(f"Your strong password could be: " + Strong_password)
